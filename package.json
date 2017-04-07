@@ -1,5 +1,5 @@
 {
-  "name": "mlproject",
+  "name": "mlibre",
   "version": "1.0.0",
   "description": "job exercise",
   "main": "index.html",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NorbertoC/mlproject"
+    "url": "https://github.com/NorbertoC/mlibre"
   },
   "keywords": [
     "gulp",
@@ -18,7 +18,7 @@
   ],
   "author": "Norberto Carosella",
   "license": "MIT",
-  "homepage": "https://github.com/NorbertoC/mlproject",
+  "homepage": "https://github.com/NorbertoC/mlibre",
   "devDependencies": {
     "browser-sync": "^2.0.0",
     "gulp": "^3.8.8",
