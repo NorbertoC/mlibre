@@ -3,8 +3,8 @@
 //   pagination: true
 // });
 
-var carousel = new ch.Carousel(el('.demo-carousel')[0], {
-  'async': 3,
+var carousel = new ch.Carousel(ch('.demo-carousel')[0], {
+  'async': 0,
   'arrows': true,
   'pagination': true
 }).on('itemsadd', function (collection) {

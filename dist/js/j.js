@@ -1,1 +1,1 @@
-var carousel=new ch.Carousel(el(".demo-carousel")[0],{async:3,arrows:!0,pagination:!0}).on("itemsadd",function(e){$.each(e,function(e,n){n.innerHTML="Content into one of newly inserted <li> elements."})}),dropdown1=new ch.Dropdown(document.querySelector(".demo-dropdown1"));
+var carousel=new ch.Carousel(ch(".demo-carousel")[0],{async:0,arrows:!0,pagination:!0}).on("itemsadd",function(n){$.each(n,function(n,e){e.innerHTML="Content into one of newly inserted <li> elements."})}),dropdown1=new ch.Dropdown(document.querySelector(".demo-dropdown1"));
