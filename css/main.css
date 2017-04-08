@@ -1,5 +1,23 @@
-.asdf {
-  color: blue; }
+.header-title {
+  text-align: center; }
 
-body {
-  background: salmon; }
+.wrapper {
+  max-width: 1200px;
+  min-width: 720px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 4px 4px 0 0;
+  padding: 12px;
+  position: relative; }
+
+.product-info {
+  display: inline-block; }
+
+.img-wrapper {
+  display: inline-block;
+  width: 49%; }
+
+.form-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%; }
