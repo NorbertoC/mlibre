@@ -36,11 +36,12 @@
 }
 
 .box-wrap {
-  position: relative; min-height: 250px;
+  position: relative;
+  min-height: 160px;
 }
 .tabbed-area div div {
   background: white;
-  min-height: 250px;
+  min-height: 160px;
   position: absolute;
   top: -1px;
   left: 0;
@@ -62,4 +63,12 @@
 
 dl.ch-list {
   margin: 10px 20px 0;
+}
+
+.buyer-title {
+  color: #3a87ad;
+}
+
+.seller-title {
+  color: #468847;
 }
