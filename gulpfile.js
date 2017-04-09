@@ -34,8 +34,15 @@ gulp.task('sass', function() {
     .pipe(prefix('last 2 versions', '> 1%', 'ie 8', 'Android 2', 'Firefox ESR'))
     .pipe(plumber())
     .pipe(concat('main.css'))
+    .pipe(gulp.dest('css'));
+});
+
+
+gulp.task('css', function () {
+  return gulp.src('css/**')
     .pipe(gulp.dest('dist/css'));
 });
+
 
 /**
  *
@@ -78,7 +85,7 @@ gulp.task('scripts', function() {
       dirname: "min",
       suffix: ".min",
     }))
-    .pipe(concat('script.js'))
+    .pipe(concat('scripts.js'))
     .pipe(gulp.dest('dist/js'))
     .pipe(reload({stream:true}));
 });
@@ -100,7 +107,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('vendor', function () {
-  return gulp.src('vendor/chico/**')
+  return gulp.src('vendor/**/**')
     .pipe(gulp.dest('dist/vendor'));
 });
 
@@ -111,7 +118,7 @@ gulp.task('vendor', function () {
  * - Watchs for file changes for images, scripts and sass/css
  *
  **/
-gulp.task('default', ['sass', 'browser-sync', 'scripts', 'images', 'minify-html'], function () {
+gulp.task('default', ['vendor', 'sass', 'css', 'browser-sync', 'scripts', 'images', 'minify-html'], function () {
   gulp.watch('sass/**/*.scss', ['sass']);
   gulp.watch('js/**/*.js', ['scripts']);
   gulp.watch('images/*', ['images']);
