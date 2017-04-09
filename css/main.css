@@ -39,6 +39,10 @@
 .ch-price {
   font-size: 30px; }
 
+.label-options {
+  display: inline-block;
+  width: 70px; }
+
 .tabs {
   list-style: none; }
 
@@ -55,6 +59,8 @@
   left: 1px;
   background-color: transparent;
   text-decoration: none; }
+  .tabs li a#box-one {
+    background-color: red; }
   .tabs li a:hover {
     background-color: #ccc; }
 
@@ -87,8 +93,10 @@
 
 #box-one:target,
 #box-two:target {
-  padding: 10px;
   z-index: 1; }
+
+dl.ch-list {
+  margin: 10px 20px 0; }
 
 .carrousel-title {
   padding: 0 10px; }
