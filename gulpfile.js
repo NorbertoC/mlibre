@@ -29,8 +29,8 @@ gulp.task('deploy', function () {
  **/
 gulp.task('sass', function() {
   gulp.src('sass/**/*.scss')
-  // .pipe(sass({outputStyle: 'compressed'}))
-    .pipe(sass())
+  .pipe(sass({outputStyle: 'compressed'}))
+  //   .pipe(sass())
     .pipe(prefix('last 2 versions', '> 1%', 'ie 8', 'Android 2', 'Firefox ESR'))
     .pipe(plumber())
     .pipe(concat('main.css'))
@@ -118,8 +118,10 @@ gulp.task('vendor', function () {
  * - Watchs for file changes for images, scripts and sass/css
  *
  **/
-gulp.task('default', ['vendor', 'sass', 'css', 'browser-sync', 'scripts', 'images', 'minify-html'], function () {
+gulp.task('default', ['sass', 'browser-sync', 'scripts'], function () {
   gulp.watch('sass/**/*.scss', ['sass']);
   gulp.watch('js/**/*.js', ['scripts']);
   gulp.watch('images/*', ['images']);
 });
+
+gulp.task('prod', ['vendor', 'css', 'scripts', 'images', 'minify-html']);
