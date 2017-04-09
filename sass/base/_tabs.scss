@@ -17,6 +17,10 @@
   background-color: transparent;
   text-decoration: none;
 
+  &#box-one {
+    background-color: red;
+  }
+
   &:hover {
     background-color: #ccc;
   }
@@ -53,6 +57,9 @@
 
 #box-one:target,
 #box-two:target {
-  padding: 10px;
   z-index: 1;
+}
+
+dl.ch-list {
+  margin: 10px 20px 0;
 }
