@@ -78,7 +78,7 @@ gulp.task('scripts', function() {
       dirname: "min",
       suffix: ".min",
     }))
-    .pipe(concat('j.js'))
+    .pipe(concat('script.js'))
     .pipe(gulp.dest('dist/js'))
     .pipe(reload({stream:true}));
 });
@@ -99,6 +99,10 @@ gulp.task('images', function () {
     .pipe(gulp.dest('dist/images'));
 });
 
+gulp.task('vendor', function () {
+  return gulp.src('vendor/chico/**')
+    .pipe(gulp.dest('dist/vendor'));
+});
 
 /**
  *

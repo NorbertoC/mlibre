@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gulp Starter</title>
-  <link rel="stylesheet" href="node_modules/chico/dist/ui/chico.min.css" />
+  <title>MercadoLibre project</title>
+  <link rel="stylesheet" href="/vendor/dist/ui/chico.min.css" />
+  <!--<link rel="stylesheet" href="css/main.css">-->
   <link rel="stylesheet" href="dist/css/main.css">
+
 </head>
 <body>
 
@@ -23,7 +25,7 @@
         </strong>
       </article>
       <form class="product-info">
-        <fieldset>
+        <fieldset class="product-options">
           <label>Quantity:
             <select>
               <option value="1">1</option>
@@ -33,7 +35,7 @@
             </select>
           </label>
         </fieldset>
-        <fieldset>
+        <fieldset class="product-options">
           <label>Payments
             <select>
               <option value="1">1</option>
@@ -43,17 +45,19 @@
             </select>
           </label>
         </fieldset>
-        <input type="button" class="ch-btn ch-btn-large" value="Buy">
-        <p>MercadoLibre is not the owner of this product</p>
+        <div class="buy-options">
+          <input type="button" class="ch-btn ch-btn-large" value="Buy">
+          <p>MercadoLibre is not the owner of this product</p>
+        </div>
       </form>
       <div class="demo-carousel ch-carousel">
         <ul>
-          <li><img src="dist/images/sinfoto.jpg" width="120px"></li>
-          <li><img src="dist/images/sinfoto.jpg" width="120px"></li>
-          <li><img src="dist/images/sinfoto.jpg" width="120px"></li>
-          <li><img src="dist/images/sinfoto.jpg" width="120px"></li>
-          <li><img src="dist/images/sinfoto.jpg" width="120px"></li>
-          <li><img src="dist/images/sinfoto.jpg" width="120px"></li>
+          <li><img src="dist/images/sinfoto.jpg" width="160px"></li>
+          <li><img src="dist/images/sinfoto.jpg" width="160px"></li>
+          <li><img src="dist/images/sinfoto.jpg" width="160px"></li>
+          <li><img src="dist/images/sinfoto.jpg" width="160px"></li>
+          <li><img src="dist/images/sinfoto.jpg" width="160px"></li>
+          <li><img src="dist/images/sinfoto.jpg" width="160px"></li>
         </ul>
       </div>
     </div>
@@ -66,7 +70,7 @@
 
 <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
 <script src="https://ui.mlstatic.com/chico/tiny/0.2.3/tiny.min.js"></script>
-<script src="node_modules/chico/dist/ui/chico.min.js"></script>
+<script src="/vendor/dist/ui/chico.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
