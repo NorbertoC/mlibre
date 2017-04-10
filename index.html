@@ -9,24 +9,25 @@
 </head>
 <body>
 
-<div class="wrapper">
+<div class="wrapper"  itemscope itemtype="http://schema.org/Offer" role="main">
   <header class="header-title">
-    <h1>Ipad Mini Apple 16 Gb WiFi Led 7.9</h1>
+    <h1 itemprop="name">Ipad Mini Apple 16 Gb WiFi Led 7.9</h1>
   </header>
   <section class="section-width">
     <div class="img-wrapper">
-      <img src="images/ninja.png">
+      <img src="images/ninja.png" alt="Ipad mini" itemprop="image">
     </div>
     <div class="form-wrapper">
-      <article class="price-container">
+      <article class="price-container" itemprop="price">
         <strong class="ch-price">
           $ 4799<sup>99</sup>
         </strong>
       </article>
-      <form class="product-info">
+      <form class="product-info" role="form">
         <fieldset class="product-options">
-          <label class="label-options" for="quantity-select">Quantity</label>
-          <select id="quantity-select">
+          <label class="label-options" for="quantity-select"
+                 itemprop="numberOfItems"/>Quantity</label>
+          <select id="quantity-select" tabindex="10">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -35,7 +36,7 @@
         </fieldset>
         <fieldset class="product-options">
           <label class="label-options" for="payments">Payments</label>
-          <select id="payments">
+          <select id="payments" tabindex="11">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -51,20 +52,20 @@
           </select>
         </fieldset>
         <div class="buy-options">
-          <input type="button" class="ch-btn ch-btn-large" value="Buy">
+          <input type="button" class="ch-btn ch-btn-large" value="Buy" tabindex="13" role="button">
           <p>MercadoLibre is not the owner of this product</p>
         </div>
       </form>
       <div>
-        <h3 class="carrousel-title">More products like these</h3>
+        <h3 class="carrousel-title" itemprop="itemOffered">More products like this</h3>
         <div class="demo-carousel ch-carousel">
           <ul>
-            <li><img src="images/sinfoto.jpg" width="160px"></li>
-            <li><img src="images/sinfoto.jpg" width="160px"></li>
-            <li><img src="images/sinfoto.jpg" width="160px"></li>
-            <li><img src="images/sinfoto.jpg" width="160px"></li>
-            <li><img src="images/sinfoto.jpg" width="160px"></li>
-            <li><img src="images/sinfoto.jpg" width="160px"></li>
+            <li><img src="images/sinfoto.jpg" alt="nopicture" itemprop="image" width="160px"></li>
+            <li><img src="images/sinfoto.jpg" alt="nopicture" itemprop="image" width="160px"></li>
+            <li><img src="images/sinfoto.jpg" alt="nopicture" itemprop="image" width="160px"></li>
+            <li><img src="images/sinfoto.jpg" alt="nopicture" itemprop="image" width="160px"></li>
+            <li><img src="images/sinfoto.jpg" alt="nopicture" itemprop="image" width="160px"></li>
+            <li><img src="images/sinfoto.jpg" alt="nopicture" itemprop="image" width="160px"></li>
           </ul>
         </div>
       </div>
@@ -74,25 +75,25 @@
   <section class="tabbed-area">
 
     <ul class="tabs group">
-      <li><a href="#box-one">Product description</a></li>
-      <li><a href="#box-two">Questions</a></li>
+      <li ><a href="#box-one" tabindex="14">Product description</a></li>
+      <li ><a href="#box-two" tabindex="15">Questions</a></li>
     </ul>
 
     <div class="box-wrap">
       <div id="box-one" >
         <dl class="ch-list">
-          <dt>Ipad Mini Apple 16 Gb</dt>
-          <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          <dt itemprop="name">Ipad Mini Apple 16 Gb</dt>
+          <dd itemprop="description" role="contentinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco
             laboris nisi ut aliquip ex ea commodo consequat</dd>
         </dl>
       </div>
-      <div id="box-two">
-        <dl class="ch-list">
+      <div id="box-two" itemprop="review" itemscope itemtype="http://schema.org/Review">
+        <dl class="ch-list" role="dialog">
           <dt class="buyer-title">Buyer</dt>
           <dd class="ch-box-info">Do you have this one in white?
-          <dt class="seller-title">Seller</dt>
+          <dt class="seller-title" itemprop="seller">Seller</dt>
           <dd class="ch-box-ok">No I don't, I only have black
         </dl>
       </div>
