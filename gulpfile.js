@@ -97,7 +97,7 @@ gulp.task('scripts', function() {
  *
  **/
 gulp.task('images', function () {
-  return gulp.src('images/*')
+  return gulp.src('images/**/*')
     .pipe(imagemin({
       progressive: true,
       svgoPlugins: [{removeViewBox: false}],
@@ -107,7 +107,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('vendor', function () {
-  return gulp.src('vendor/**/**')
+  return gulp.src('vendor/**/*')
     .pipe(gulp.dest('dist/vendor'));
 });
 
