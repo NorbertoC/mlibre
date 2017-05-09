@@ -1,9 +1,14 @@
-.header-title {
+.header {
   text-align: center;
 }
 
+.title {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
 .wrapper{
-  max-width: 1200px;
+  max-width: 960px;
   min-width: 720px;
   margin: 20px auto;
   border: 1px solid #ddd;
@@ -13,6 +18,7 @@
 }
 
 .section-width {
+  display: flex;
 }
 
 .product-info {
@@ -23,6 +29,10 @@
 .img-wrapper {
   display: inline-block;
   width: 49%;
+}
+
+.main-image {
+  width: 470px;
 }
 
 .form-wrapper {
@@ -49,7 +59,7 @@
 }
 
 .ch-price {
-  font-size: 30px;
+  font-size: 36px;
 }
 
 .label-options {

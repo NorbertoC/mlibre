@@ -11,7 +11,7 @@ describe('ch.Autocomplete', function () {
     var typingEvent = chai.spy();
 
     before(function(){
-        container.innerHTML = '<form id="form-1" action="" class="ch-form">'+
+        container.innerHTML = '<form id="form-1" action="./" class="ch-form">'+
                                 '<div class="ch-form-row">'+
                                     '<label>Test {ID}</label>'+
                                     '<input id="autocomplete-1" type="text">'+
@@ -20,7 +20,7 @@ describe('ch.Autocomplete', function () {
                                     '<input type="submit" class="ch-btn">'+
                                 '</div>'+
                             '</form>'+
-                            '<form id="form-2" action="" class="ch-form">'+
+                            '<form id="form-2" action="./" class="ch-form">'+
                                 '<div class="ch-form-row">'+
                                     '<label>Test {ID}</label>'+
                                     '<input id="autocomplete-2" type="text">'+
@@ -29,7 +29,7 @@ describe('ch.Autocomplete', function () {
                                     '<input type="submit" class="ch-btn">'+
                                 '</div>'+
                             '</form>'+
-                            '<form id="form-3" action="" class="ch-form">'+
+                            '<form id="form-3" action="./" class="ch-form">'+
                                 '<div class="ch-form-row">'+
                                     '<label>Test {ID}</label>'+
                                     '<input id="autocomplete-3" type="text">'+

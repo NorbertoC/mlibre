@@ -1,9 +1,4 @@
-// console.log('Hello World')
-// var carousel = new ch.Carousel(ch('.demo-carousel')[0], {
-//   pagination: true
-// });
-
-var carousel = new ch.Carousel(ch('.demo-carousel')[0], {
+var carousel = new ch.Carousel(ch('.carousel')[0], {
   'async': 0,
   'arrows': true,
   'pagination': true

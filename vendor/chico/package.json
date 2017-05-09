@@ -10,7 +10,7 @@
         "spec": "latest",
         "type": "tag"
       },
-      "/home/norb/gulp-starter"
+      "/home/norb/mlibre"
     ]
   ],
   "_from": "chico@latest",
@@ -44,7 +44,7 @@
   "_shasum": "54f04c35e60d652a6dd612fb4e27a61e3559430a",
   "_shrinkwrap": null,
   "_spec": "chico",
-  "_where": "/home/norb/gulp-starter",
+  "_where": "/home/norb/mlibre",
   "author": {
     "email": "chico@mercadolibre.com"
   },
